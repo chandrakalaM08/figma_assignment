@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    background: var(--background, #212121);
+    color: #FFF;
+}
+
+.innerContainer1 {
+    padding: 50px 80px 50px 80px;
+}
+
+.logo {
+    width: 76px;
+    height: 51px;
+    flex-shrink: 0;
+}
+
+.social {
+
+    width: 31px;
+    height: 24px;
+}
