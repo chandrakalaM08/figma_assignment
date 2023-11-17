@@ -1,8 +1,13 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
+import TopSection from '../components/TopSection'
 
 const HomePage = () => {
     return (
-        <div>HomePage</div>
+        <div>
+            <Navbar />
+            <TopSection />
+        </div>
     )
 }
 
