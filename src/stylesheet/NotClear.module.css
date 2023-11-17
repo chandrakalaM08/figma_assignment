@@ -5,23 +5,8 @@
     text-align: left;
 }
 
-.container {
-    display: flex;
-    width: 95%;
-    margin: auto;
-    justify-content: space-between;
-}
-
-.contactUs {
-    margin-left: 18%;
-    width: 25%;
-    font-size: 65%;
-    letter-spacing: 1px;
-    border-radius: 4px;
-}
-
 .text1 {
-    padding-left: 60px;
+    padding-left: 32px;
     color: #2A2A2A;
     font-size: 100%;
     font-style: normal;

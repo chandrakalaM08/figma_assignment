@@ -56,7 +56,7 @@ const ListHeader = ({ children }) => {
 export default function Footer() {
     return (
         <Box className={styles.container}>
-            <Container maxW={'8xl'}>
+            <Container maxW={'7xl'}>
                 <Stack
                     className={styles.innerContainer1}
                     direction={{ base: 'column', md: 'row' }}

@@ -1,0 +1,33 @@
+.question {
+    color: #2A2A2A;
+    font-size: 90%;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 1%;
+}
+
+.answer {
+    color: #2A2A2A;
+    font-size: 85%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.heading {
+    display: flex;
+    color: #2A2A2A;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 137.8%;
+    text-transform: capitalize;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 3%;
+    height: 3%;
+}
