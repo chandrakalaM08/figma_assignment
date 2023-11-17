@@ -2,7 +2,7 @@ import React from 'react'
 
 const TopSection = () => {
     return (
-        <div>TopSection</div>
+        <div style={{ height: "300px", border: "2px solid green" }}>TopSection</div>
     )
 }
 
