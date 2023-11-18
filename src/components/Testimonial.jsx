@@ -15,7 +15,7 @@ const Testimonial = () => {
                     <Image src={comma} w={'25%'} h={'15%'} />
                 </Box>
 
-                <Box textAlign={"left"} marginLeft={"20px"} w={{ base: "120%", lg: "62.5%" }}>
+                <Box textAlign={"left"} marginLeft={{ base: "3px", lg: "20px" }} w={{ base: "110%", lg: "62.5%" }}>
                     <Text fontSize={"20px"} fontWeight={600}>SUNIL GUPTA</Text>
                     <Text fontSize={"16px"} fontWeight={600}>Chartered accountant</Text>
                     <Text fontSize={"16px"} fontWeight={400}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in odio vitae justo vestibulum bibendum ac in sem. Sed varius tellus et purus iaculis, id varius odio rhoncus. Vestibulum vestibulum lacinia tortL orem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in odio vitae justo vestibulum bibendum ac in sem. Sed varius tellus et purus iaculis, id varius odio rhoncus. Vestibulum vestibulum lacinia tortor, et convallis libero vehicula ut. or, et convallis libero vehicula ut.</Text>

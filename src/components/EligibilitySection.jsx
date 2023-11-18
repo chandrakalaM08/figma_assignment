@@ -80,7 +80,7 @@ const EligibilitySection = () => {
                 <TabPanels >
                     {tabsData.map((tab) => {
                         return <TabPanel display={"flex"}
-                            justifyContent={"space-around"}>
+                            justifyContent={{ base: "flex-start", lg: "space-around" }}>
                             <Box w={'50%'} textAlign={'start'}>
                                 {tab?.content?.map(item => {
                                     return <Box key={item} mb={'40px'} w={{ base: "180%", lg: "" }}>
