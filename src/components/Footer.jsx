@@ -55,12 +55,12 @@ const ListHeader = ({ children }) => {
 
 export default function Footer() {
     return (
-        <Box className={styles.container}>
+        <Box className={styles.container} >
             <Container maxW={'7xl'}>
                 <Stack
-                    className={styles.innerContainer1}
+                    padding={{ base: "10px 20px 20px 20px", lg: "50px 80px 50px 80px" }}
                     direction={{ base: 'column', md: 'row' }}
-                    spacing={{ base: 6, md: 12, lg: "500px" }}
+                    spacing={{ base: 3, md: 12, lg: "500px" }}
                     margin={'auto'}
                 >
                     <Stack spacing={6} align={'flex-start'} >
@@ -82,7 +82,7 @@ export default function Footer() {
                     </Stack>
 
                     {/* Use HStack for Help & Support and Customer Care sections */}
-                    <HStack align={'flex-start'} gap={"10%"}>
+                    <HStack align={'flex-start'} gap={{ base: "10px", lg: "10%" }}>
                         <Stack align={'flex-start'} >
                             <ListHeader>Help & Support</ListHeader>
                             <Box as="a" href={'#'} fontSize={"14px"}>
@@ -95,9 +95,9 @@ export default function Footer() {
                                 FAQ
                             </Box>
                         </Stack>
-                        <Stack align={'flex-start'} >
+                        <Stack align={'flex-start'} marginRight={{ base: "30px" }} marginLeft={{ base: "-60px" }} >
                             <ListHeader>Customer care</ListHeader>
-                            <Box as="a" href={'#'} fontSize={"14px"}>
+                            <Box as="a" href={'#'} fontSize={"14px"} textAlign={"left"}>
                                 2972 Westheimer Rd. Santa Ana, Illinois 85486
                             </Box>
                             <Box as="a" href={'#'} fontSize={"14px"}>

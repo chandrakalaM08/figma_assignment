@@ -58,8 +58,9 @@ const EMICalculator = () => {
                         </Slider>
                     </Box>
                 </Box>
-                <Flex w={{ base: "100%", md: "65%" }} shadow={'md'} p={'30px'} justifyContent={'space-between'} borderRadius={'10px'}>
-                    <Box w={'48%'} fontWeight={'500'}>
+                <Flex w={{ base: "100%", md: "65%" }}
+                    flexDirection={{ base: "column", lg: "row" }} shadow={'md'} p={'30px'} justifyContent={'space-between'} borderRadius={'10px'}>
+                    <Box w={{ base: "100%", lg: '48%' }} fontWeight={'500'}>
                         <Image src={ellipse} />
                         <Flex mt={'40px'} justifyContent={'space-between'}>
                             <Flex gap={'10px'} alignItems={'center'}>
@@ -80,17 +81,17 @@ const EMICalculator = () => {
                             <Text color={'#8800EC'} fontWeight={'500'}>₹3,59,454</Text>
                         </Flex>
                     </Box>
-                    <Box w={'40%'} position={'relative'}>
+                    <Flex w={{ base: "100%", lg: '40%' }} position={'relative'} flexDirection={"column"}  >
                         <Box bg={'#FCF8FF'} p={'40px 20px'} textAlign={'center'}>
                             <Text fontWeight={'bold'} mb={'25px'} fontSize={'20px'}>Equated Monthly Installments (EMI)</Text>
                             <Heading fontSize={"200%"}>₹14,977</Heading>
                         </Box>
 
                         <Flex justifyContent={"center"} w={"95%"} mb={"20px"}>
-                            <Button color={"white"} background={"var(--1, #8800EC)"} fontSize={"85%"}>APPLY NOW</Button>
+                            <Button color={"white"} background={"var(--1, #8800EC)"} fontSize={"85%"} padding={"0px 35px 0px 35px"}>APPLY NOW</Button>
 
                         </Flex>
-                    </Box>
+                    </Flex>
                 </Flex>
             </Flex>
         </div >

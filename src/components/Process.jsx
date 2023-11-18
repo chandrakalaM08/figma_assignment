@@ -19,10 +19,10 @@ const Process = () => {
         <div className={styles.mainBox}>
             <Flex minH={'70vh'} className={styles.main} flexDir={{ base: 'column', sm: 'column', md: 'column', lg: 'row', xl: 'row', '2xl': 'row' }}>
                 <Box className={styles.box1} backgroundImage={`url(${confety})`} w={{ base: '100%', sm: '100%', md: '100%', lg: '50%', xl: '50%', '2xl': '50%' }}>
-                    <Box position={'relative'} className={styles.innerbox1}>
-                        <Image src={iphoneX} w={"95%"} />
+                    <Box position={'relative'} className={styles.innerbox1} >
+                        <Image src={iphoneX} w={{ base: "130%", lg: "95%" }} />
                         <Image className={styles.box1Img2} src={logo} />
-                        <VStack
+                        <VStack 
                             backgroundColor={"#f4e9fc"}
                             borderRadius={"8px"}
                             padding={"10px 20px"}
@@ -30,7 +30,7 @@ const Process = () => {
                             position={"absolute"}
                             top={"30%"}
                             left={"8%"}>
-                            <Image src={shopping} w={"30px"} />
+                            <Image src={shopping} w={{ base: "0", lg: "30px" }} />
                             <Text color={'gray.600'} fontSize={"14px"}>Personal Loan</Text>
                             <Text color={'#8800ec'} fontWeight={'600'} fontSize={"14px"}>upto Rs 10 Lacs</Text>
                         </VStack>
@@ -39,9 +39,9 @@ const Process = () => {
                             padding={"10px 20px"}
                             width={"80%"}
                             position={"absolute"}
-                            bottom={"15%"}
+                            bottom={{ base: "20%", lg: "18%" }}
                             left={"8%"}>
-                            <Image src={building} w={"30px"} />
+                            <Image src={building} w={{ base: "0", lg: "30px" }} />
                             <Text color={'gray.600'} fontSize={"14px"}>Flexible Repayment</Text>
                             <Text color={'#8800ec'} fontWeight={'600'} fontSize={"14px"}>at interest rate 10.49% p.a.</Text>
                         </VStack>
@@ -70,14 +70,13 @@ const Process = () => {
                 <Box className={styles.box2} w={{ base: '100%', sm: '100%', md: '100%', lg: '50%', xl: '50%', '2xl': '50%' }}>
                     <Flex marginLeft={'4%'}>
                         <Image src={lightning} className={styles.box2Img} />
-                        <Text fontSize={'28px'} fontWeight={'600'}>Lightning Fast Process</Text>
+                        <Text fontSize={{ base: "20px", lg: "26px" }} mt={{ base: "20px" }} fontWeight={'600'}>Lightning Fast Process</Text>
                     </Flex>
                     <Box marginTop={'9%'}>
-                        <Image w={"75%"} src={rangeBar} />
+                        <Image w={{ base: "120%", lg: "75%" }} src={rangeBar} />
                     </Box>
-                    <Flex justifyContent={"center"} w={"80%"} mb={"20px"}>
+                    <Flex justifyContent={"center"} w={{ base: "", lg: "80%" }} mb={"20px"}>
                         <Button color={"white"} background={"var(--1, #8800EC)"} fontSize={"85%"}>APPLY NOW</Button>
-
                     </Flex>
 
                 </Box>

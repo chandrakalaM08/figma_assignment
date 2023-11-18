@@ -54,16 +54,22 @@ const EligibilitySection = () => {
             margin: "40px auto"
         }}>
             <Tabs variant='enclosed'
+                display={{ base: "flex", lg: "block" }}
+                width={{ base: "120%", lg: "100%" }}
+                justifyContent={{ base: "flex-start" }}
                 borderLeft={"1px solid #CBD5E0"}
                 borderRight={"1px solid #CBD5E0"}
                 borderBottom={"1px solid #CBD5E0"}
                 borderRadius={"6px"}>
-                <TabList display={"flex"}
-                    alignItems={"center"}
+                <TabList display={{ base: "flex" }} flexDirection={{ base: "column", lg: "row" }}
                 >
                     {tabsData.map((tab, index) => {
-                        return <Tab w={"50%"} paddingTop={"10px"}
+                        return <Tab w={{ base: "90%", lg: "60%" }} paddingTop={"10px"}
                             fontWeight={"500"}
+                            textDecoration={{
+                                base: selectedTab === index ? 'underline' : 'none',
+                                lg: "none"
+                            }}
                             color={selectedTab === index ? 'var(--1, #8800EC)' : 'gray.500'} // Change color here
                             onClick={() => setSelectedTab(index)}>
                             <Image w={'30px'} src={tab.img} />
@@ -71,17 +77,17 @@ const EligibilitySection = () => {
                         </Tab>
                     })}
                 </TabList>
-                <TabPanels className='table-panels'>
+                <TabPanels >
                     {tabsData.map((tab) => {
                         return <TabPanel display={"flex"}
                             justifyContent={"space-around"}>
                             <Box w={'50%'} textAlign={'start'}>
                                 {tab?.content?.map(item => {
-                                    return <Box key={item} mb={'40px'} w={{ base: "100%" }}>
-                                        <Flex alignItems={'center'} gap={'7px'}>
+                                    return <Box key={item} mb={'40px'} w={{ base: "180%", lg: "" }}>
+                                        <Flex alignItems={'center'} gap={'8px'}>
                                             <Text fontWeight={'600'}>⭐ {item.heading}</Text>
                                         </Flex>
-                                        <Text ml={'5.4%'} color={'gray.500'} fontSize={"14px"}>{item.text}</Text>
+                                        <Text ml={'2.9%'} color={'gray.500'} fontSize={"14px"}>{item.text}</Text>
                                     </Box>
                                 })}
                             </Box>
