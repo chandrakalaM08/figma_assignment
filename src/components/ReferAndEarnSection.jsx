@@ -8,8 +8,8 @@ const ReferAndEarnSection = () => {
     const buttonSize = useBreakpointValue({ base: "sm", md: "md", lg: "lg" });
 
     return (
-        <Flex direction={{ base: "column", md: "row" }} w={'85%'} justifyContent={'center'} mb={"50px"}>
-            <Box textAlign={{ base: 'center', md: 'left' }} mb={{ base: 4, md: 0 }} marginLeft={{ md: "120px" }}>
+        <Flex direction={{ base: "column", lg: "row" }} w={'85%'} justifyContent={'center'} alignItems={"center"} mb={"50px"}>
+            <Box textAlign={{ base: 'center', lg: 'center' }} mb={{ base: 4, md: 0 }} marginLeft={{ base: "60px", lg: "100px" }}>
                 <Text fontSize="24px" fontWeight={600}>Refer & Earn Now</Text>
                 <Text fontSize="sm" mt={"24px"} fontWeight={500}>Get a ₹500 Big Basket gift card</Text>
                 <Button size={buttonSize} borderRadius={"4px"}

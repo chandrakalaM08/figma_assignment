@@ -24,8 +24,16 @@
     padding-right: 4%;
 }
 
-.container2Input {
+.Input {
+    width: 230px;
     border-radius: 3px;
-    padding-left: 8px;
     background: var(--light-states-on-background-high-contrast-opacity-012, rgba(33, 33, 33, 0.12));
+}
+.searchIcon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: auto
 }

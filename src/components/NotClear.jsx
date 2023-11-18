@@ -3,7 +3,8 @@ import React from 'react'
 import styles from "../stylesheet/NotClear.module.css"
 const NotClear = () => {
     return (
-        <Box className={styles.mainContainer} marginTop={{ base: "20px", lg: "inherit" }}>
+        <Box className={styles.mainContainer} marginTop={{ base: "20px", lg: "50px" }}
+        >
             <Text className={styles.text1}>
                 Anything not clear?
             </Text>

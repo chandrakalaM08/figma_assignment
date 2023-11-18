@@ -83,11 +83,12 @@ const EligibilitySection = () => {
                             justifyContent={{ base: "flex-start", lg: "space-around" }}>
                             <Box w={'50%'} textAlign={'start'}>
                                 {tab?.content?.map(item => {
-                                    return <Box key={item} mb={'40px'} w={{ base: "180%", lg: "" }}>
+                                    return <Box key={item} mb={'40px'} w={{ base: "180%", lg: "" }} marginLeft={{ lg: "50px" }}
+                                        marginTop={{ base: "0px", lg: "40px" }}>
                                         <Flex alignItems={'center'} gap={'8px'}>
                                             <Text fontWeight={'600'}>⭐ {item.heading}</Text>
                                         </Flex>
-                                        <Text ml={'2.9%'} color={'gray.500'} fontSize={"14px"}>{item.text}</Text>
+                                        <Text ml={'2.9%'} color={'gray.500'} fontSize={"14px"} lineHeight={"25px"}>{item.text}</Text>
                                     </Box>
                                 })}
                             </Box>

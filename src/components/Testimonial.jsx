@@ -5,7 +5,7 @@ import businessman from "../assets/businessman.svg"
 import comma from "../assets/comma.svg"
 const Testimonial = () => {
     return (
-        <Box mb={"4%"}>
+        <Box mb={"4%"} backgroundColor={"rgb(248, 249, 250)"}>
             <Flex justifyContent={"center"} mb={{ base: "-20px", lg: "4%" }} marginTop={{ base: "-120px", lg: "60px" }}>
                 <Image src={handsheart} w={'30px'} h={'30px'} />  <Text fontSize={"145%"} fontWeight={600}>What our customer says</Text>
             </Flex>

@@ -83,12 +83,12 @@ const EMICalculator = () => {
                     </Box>
                     <Flex w={{ base: "100%", lg: '40%' }} position={'relative'} flexDirection={"column"}  >
                         <Box bg={'#FCF8FF'} p={'40px 20px'} textAlign={'center'}>
-                            <Text fontWeight={'bold'} mb={'25px'} fontSize={'20px'}>Equated Monthly Installments (EMI)</Text>
+                            <Text fontWeight={'bold'} mb={'20px'} fontSize={'20px'}>Equated Monthly Installments (EMI)</Text>
                             <Heading fontSize={"200%"}>₹14,977</Heading>
                         </Box>
 
-                        <Flex justifyContent={"center"} w={"95%"} mb={"20px"}>
-                            <Button color={"white"} background={"var(--1, #8800EC)"} fontSize={"85%"} padding={"0px 35px 0px 35px"}>APPLY NOW</Button>
+                        <Flex justifyContent={"center"} w={"100%"} mb={"20px"}>
+                            <Button color={"white"} background={"var(--1, #8800EC)"} fontSize={"80%"} padding={"0px 55px 0px 55px"}>APPLY NOW</Button>
 
                         </Flex>
                     </Flex>

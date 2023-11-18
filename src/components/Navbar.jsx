@@ -25,7 +25,7 @@ const Navbar = () => {
     }, [])
     return (
         <div>
-            <Flex boxShadow={'base'} p={'24px'} alignItems={'center'} justifyContent={'space-between'}>
+            <Flex boxShadow={'base'} padding={"20px 42px 20px 42px"} alignItems={'center'} justifyContent={'space-between'}>
                 <TopDrawer onOpen={onOpen} btnRef={btnRef} isOpen={isOpen} onClose={onClose} />
                 <Flex className={styles.container1}>
                     <Box fontSize={'20px'} display={{ base: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none', '2xl': 'none' }}>
@@ -43,11 +43,13 @@ const Navbar = () => {
                     </Flex>
                 </Flex>
                 <Flex className={styles.container2}>
-                    <Flex className={`${styles.container2} ${styles.container2Input}`} display={{ base: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex', '2xl': 'flex' }}>
-                        <Image src={searchIcon} />
+                    <Flex className={` ${styles.Input}`}
+                        position="relative" display={{ base: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex', '2xl': 'flex' }}>
+                        <Image src={searchIcon} className={styles.searchIcon} />
                         <Input _focusVisible={'none'} placeholder='Search Tata Neu' _placeholder={{
                             color: 'black', fontSize: "14px"
-                        }} />
+                        }}
+                            padding={"12px 12px 12px 40px"} />
 
                     </Flex>
                     <Flex alignItems={'center'} gap={'3px'}>

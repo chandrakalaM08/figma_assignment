@@ -1,7 +1,11 @@
 .mainContainer {
     padding: 2.778% 3.542% 2.778% 1.542%;
-        width: 100%;
+    width: 95%;
+        margin: auto;
     text-align: left;
+    background-color: rgb(244, 236, 249);
+    
+        margin-bottom: 50px;
 }
 
 .text1 {
