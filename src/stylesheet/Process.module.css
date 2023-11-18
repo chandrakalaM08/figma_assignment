@@ -26,45 +26,10 @@
     width: 31%;
 }
 
-.innerBox1 {
-    display: grid;
-    place-items: center;
-    position: relative;
-    line-height: 15px;
-    background-color: #f4e9fc;
-    border-radius: 8px;
-    padding: 10px 20px;
-    width: 80%;
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    gap: 10px
-}
+
 
 .innerBox1Img {
     width: 40px;
-}
-
-.box1 .innerBox1 p {
-    font-weight: 500;
-}
-
-.box1 .innerBox2 {
-    background-color: #e9f7ff;
-    border-radius: 8px;
-    padding: 10px 20px;
-    width: 80%;
-    position: absolute;
-    bottom: 13%;
-    left: 10%;
-}
-
-.innerBox2Img {
-    width: 40px;
-}
-
-.box1 .innerBox2 p {
-    font-weight: 500;
 }
 
 .outsideBox {

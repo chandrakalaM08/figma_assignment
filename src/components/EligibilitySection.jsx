@@ -1,11 +1,14 @@
-import { Box, Tabs, TabList, TabPanels, Tab, TabPanel, Flex, Image } from '@chakra-ui/react'
-import React from 'react'
-import eligibility from "../assets/eligibility.png"
+import { Box, Tabs, TabList, TabPanels, Tab, TabPanel, Flex, Image, Text } from '@chakra-ui/react'
+import React, { useState } from 'react'
 import step1 from "../assets/process/step1.svg"
 import step2 from "../assets/process/step2.svg"
 import step3 from "../assets/process/step3.svg"
 import step4 from "../assets/process/step4.svg"
+import elegibility from "../assets/eligibility.png"
 const EligibilitySection = () => {
+
+    const [selectedTab, setSelectedTab] = useState(0);
+
     const tabsData = [{
         img: step1,
         title: "Eligibility",
@@ -46,41 +49,51 @@ const EligibilitySection = () => {
 
 
     return (
-        <Flex justifyContent={{ base: "space-evenly", md: "flex-start" }} gap={{ base: "0px", lg: "200px" }} >
+        <div style={{
+            width: "83%",
+            margin: "40px auto"
+        }}>
+            <Tabs variant='enclosed'
+                borderLeft={"1px solid #CBD5E0"}
+                borderRight={"1px solid #CBD5E0"}
+                borderBottom={"1px solid #CBD5E0"}
+                borderRadius={"6px"}>
+                <TabList display={"flex"}
+                    alignItems={"center"}
+                >
+                    {tabsData.map((tab, index) => {
+                        return <Tab w={"50%"} paddingTop={"10px"}
+                            fontWeight={"500"}
+                            color={selectedTab === index ? 'var(--1, #8800EC)' : 'gray.500'} // Change color here
+                            onClick={() => setSelectedTab(index)}>
+                            <Image w={'30px'} src={tab.img} />
+                            <Text>{tab.title}</Text>
+                        </Tab>
+                    })}
+                </TabList>
+                <TabPanels className='table-panels'>
+                    {tabsData.map((tab) => {
+                        return <TabPanel display={"flex"}
+                            justifyContent={"space-around"}>
+                            <Box w={'50%'} textAlign={'start'}>
+                                {tab?.content?.map(item => {
+                                    return <Box key={item} mb={'40px'} w={{ base: "100%" }}>
+                                        <Flex alignItems={'center'} gap={'7px'}>
+                                            <Text fontWeight={'600'}>⭐ {item.heading}</Text>
+                                        </Flex>
+                                        <Text ml={'5.4%'} color={'gray.500'} fontSize={"14px"}>{item.text}</Text>
+                                    </Box>
+                                })}
+                            </Box>
+                            <Box w={'30%'} >
+                                <Image src={elegibility} height={{ base: "0", md: "105%" }} />
+                            </Box>
+                        </TabPanel>
+                    })}
 
-            <Box marginLeft={{ base: "0", lg: "100px" }} w={{ base: "130%" }}>
-                <Tabs variant="enclosed">
-                    <TabList>
-                        {tabsData.map((tab, index) => (
-
-                            <Tab key={index} style={{ fontWeight: "600" }}><Image src={tab.img} w={"30px"} />{tab.title}</Tab>
-
-
-                        ))}
-                    </TabList>
-                    <TabPanels>
-                        {tabsData.map((tab, index) => (
-                            <TabPanel key={index} w={"100%"}>
-                                {tab.content.map((item, itemIndex) => (
-                                    <div key={itemIndex} style={{ textAlign: "left", marginBottom: "35px" }}>
-                                        <p style={{ fontWeight: "600" }}>⭐ {item.heading}</p>
-                                        <p style={{ fontWeight: "400", marginLeft: "20px" }}>   {item.text}</p>
-                                    </div>
-                                ))}
-                            </TabPanel>
-                        ))}
-                    </TabPanels>
-
-                </Tabs>
-
-
-            </Box>
-
-            <Box >
-                <Image src={eligibility} w={{ base: "none", lg: "700px" }} h={"350px"} display={{ base: "none", lg: "unset" }} />
-            </Box>
-
-        </Flex>
+                </TabPanels>
+            </Tabs>
+        </div >
     )
 }
 

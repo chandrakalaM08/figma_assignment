@@ -20,8 +20,31 @@ const Process = () => {
             <Flex minH={'70vh'} className={styles.main} flexDir={{ base: 'column', sm: 'column', md: 'column', lg: 'row', xl: 'row', '2xl': 'row' }}>
                 <Box className={styles.box1} backgroundImage={`url(${confety})`} w={{ base: '100%', sm: '100%', md: '100%', lg: '50%', xl: '50%', '2xl': '50%' }}>
                     <Box position={'relative'} className={styles.innerbox1}>
-                        <Image src={iphoneX} w={"80%"} />
+                        <Image src={iphoneX} w={"95%"} />
                         <Image className={styles.box1Img2} src={logo} />
+                        <VStack
+                            backgroundColor={"#f4e9fc"}
+                            borderRadius={"8px"}
+                            padding={"10px 20px"}
+                            width={"80%"}
+                            position={"absolute"}
+                            top={"30%"}
+                            left={"8%"}>
+                            <Image src={shopping} w={"30px"} />
+                            <Text color={'gray.600'}>Personal Loan</Text>
+                            <Text color={'#8800ec'} fontWeight={'bold'}>upto Rs 10 Lacs</Text>
+                        </VStack>
+                        <VStack backgroundColor={"#f4e9fc"}
+                            borderRadius={"8px"}
+                            padding={"10px 20px"}
+                            width={"80%"}
+                            position={"absolute"}
+                            bottom={"15%"}
+                            left={"8%"}>
+                            <Image src={building} w={"30px"} />
+                            <Text color={'gray.600'}>Personal Loan</Text>
+                            <Text color={'#8800ec'} fontWeight={'bold'}>upto Rs 10 Lacs</Text>
+                        </VStack>
                     </Box>
                     <Flex className={styles.outsideBox} top={'15%'} left={'12%'} bg={'#FFE0B3'}>
                         <Image src={hospital} />

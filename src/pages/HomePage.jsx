@@ -15,20 +15,24 @@ import Partners from '../components/Partners'
 
 const HomePage = () => {
     return (
-        <div style={{ width: "90%", margin: "auto" }}>
-            <Navbar />
-            <TopSection />
-            <Highlights />
-            <Partners />
-            <Process />
-            <Testimonial />
-            <EligibilitySection />
-            <EMICalculator />
-            <ReferAndEarnSection />
-            <FAQSection />
-            <NotClear />
+        <> <Navbar />
+            <div style={{ width: "90%", margin: "auto" }}>
+
+                <TopSection />
+                <Highlights />
+                <Partners />
+                <Process />
+                <Testimonial />
+                <EligibilitySection />
+                <EMICalculator />
+                <ReferAndEarnSection />
+                <FAQSection />
+                <NotClear />
+
+            </div>
             <Footer />
-        </div>
+        </>
+
     )
 }
 
