@@ -6,7 +6,7 @@ import yellowStar from "../assets/yellowstar.svg"
 const Highlights = () => {
 
     return (
-        <div style={{ width: "90%", border: "3px solid black", margin: "auto" }}>
+        <div style={{ width: "90%", margin: "auto" }}>
             <Flex textAlign={"flex-start"} >
                 <Image src={star} w={"4%"} h={"30px"} />
                 <Text fontWeight={600} fontSize={"22px"}>Personal Loan Highlights</Text>

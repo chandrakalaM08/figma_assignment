@@ -7,7 +7,7 @@ import document from "../assets/document.svg"
 import hand from "../assets/hand.svg"
 const TopSection = () => {
     return (
-        <Flex style={{ border: "10px solid green" }} w={"90%"} margin={"auto"} justifyContent={"space-between"}>
+        <Flex w={"90%"} margin={"auto"} justifyContent={"space-between"}>
             <Box w={"80%"} textAlign={"left"}>
                 <Box w={{ base: "120%", md: "80%" }}>
                     <Text fontWeight={700} fontSize={"37px"} >Turn Dreams into Reality</Text>
