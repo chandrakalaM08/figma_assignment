@@ -15,7 +15,7 @@ import Partners from '../components/Partners'
 
 const HomePage = () => {
     return (
-        <div>
+        <div style={{ width: "90%", margin: "auto" }}>
             <Navbar />
             <TopSection />
             <Highlights />
