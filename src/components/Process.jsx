@@ -31,8 +31,8 @@ const Process = () => {
                             top={"30%"}
                             left={"8%"}>
                             <Image src={shopping} w={"30px"} />
-                            <Text color={'gray.600'}>Personal Loan</Text>
-                            <Text color={'#8800ec'} fontWeight={'bold'}>upto Rs 10 Lacs</Text>
+                            <Text color={'gray.600'} fontSize={"14px"}>Personal Loan</Text>
+                            <Text color={'#8800ec'} fontWeight={'600'} fontSize={"14px"}>upto Rs 10 Lacs</Text>
                         </VStack>
                         <VStack backgroundColor={"#f4e9fc"}
                             borderRadius={"8px"}
@@ -42,8 +42,8 @@ const Process = () => {
                             bottom={"15%"}
                             left={"8%"}>
                             <Image src={building} w={"30px"} />
-                            <Text color={'gray.600'}>Personal Loan</Text>
-                            <Text color={'#8800ec'} fontWeight={'bold'}>upto Rs 10 Lacs</Text>
+                            <Text color={'gray.600'} fontSize={"14px"}>Flexible Repayment</Text>
+                            <Text color={'#8800ec'} fontWeight={'600'} fontSize={"14px"}>at interest rate 10.49% p.a.</Text>
                         </VStack>
                     </Box>
                     <Flex className={styles.outsideBox} top={'15%'} left={'12%'} bg={'#FFE0B3'}>
